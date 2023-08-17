@@ -1,0 +1,28 @@
+body {
+    width: 600px;
+    padding: 50px;
+    border: 5px solid;
+    margin: 10px auto 10px auto;
+    font-family: Arial, sans-serif;
+}
+
+p.cust_found {
+    padding: 10px;
+    background-color: #e2e2e2;
+    border: 2px solid #c8c8c8;
+}
+
+p.trans_success {
+    padding: 10px;
+    background-color: #e2e2e2;
+    border: 2px solid #c8c8c8;
+}
+
+p.cust_info{
+    padding: 10px 10px 10px 50px;
+}
+
+h1{
+    text-align: center;
+}
+

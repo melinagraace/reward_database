@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> {{ title }} </title>
+{% endblock %}
+
+{% block body %}
+<h2> {{ heading }}</h2>
+
+{% if cust_found %}
+<p class = "cust_found" > The phone number <b>{{cust_phone}}</b> is already associated with a customer account.<br>
+If this is the wrong customer, <a href = /new_cust> add customer</a> and use different phone number.<br>
+If the customer is correct, proceed as usual. </p>
+{% endif %}
+
+{% if trans_success %}
+<p class = "trans_success" > Transaction added. </p>
+{% endif %}
+
+
+{% for cust in cust_sum%}
+<p class = cust_info >
+    <b>Name: </b>   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;        {{cust[1]}} <br>
+    <b>Reward Level: </b>   &emsp;&emsp;&emsp;&nbsp;&puncsp;         {{cust[2]}}<br>
+    <b>Points per Dollar:</b>   &emsp;&emsp;     {{cust[3]}}<br>
+    <b>Redeemable Points:</b>   &nbsp; &nbsp;        {{cust[4]}} <br>
+    <b>Value of Points:</b> &emsp;&emsp;&nbsp;&nbsp;&puncsp;     {{cust[5]}} <br>
+</p>
+{% endfor %}
+
+
+<a href = '/transaction'> 
+    <button> Add a transaction </button>
+</a> 
+<br>
+<br>
+<hr>
+
+
+
+<a href = '/'> 
+    <button> Home </button>
+</a> 
+
+{% endblock %}

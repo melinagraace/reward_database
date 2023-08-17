@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> Home </title>
+{% endblock %}
+
+{% block body %}
+<h1>Homepage</h1>
+<h3>Customer look-up:</h3>
+<form action="/customer" method="post">
+    <label for="cust_phone">Customer Phone Number:</label> <br>
+    <input type="text" id="cust_phone" name="cust_phone" maxlength = 10 required><br><br>
+
+    <button><a>Search</a></button><br>
+</form> 
+<br>
+<hr>
+
+<h3>Add a new-customer:</h3>
+<a href = '/new_cust'> 
+    <button> New Customer </button>
+</a> 
+
+
+{% endblock %}ß

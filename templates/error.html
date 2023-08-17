@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title> ERROR </title>
+{% endblock %}
+
+{% block body %}
+<h2> Error in {{ location }} </h2>
+<b> Cause of error: </b> {{ cause }} <b>{{pts_avail}}</b> 
+<br><br>
+<b> Recommendation: </b> {{ rec }}
+
+{% if trans %}
+<br><br>
+<a href = '/transaction'> 
+    <button> Restart Transaction </button>
+</a> 
+{% endif %}
+
+{% if cust %}
+<br><br>
+<a class = "test" href = '/new_cust'> 
+    <button> New Customer </button>
+</a> 
+{% endif %}
+
+<br><br>
+<hr>
+
+<a href = '/'> 
+    <button> Home </button>
+</a> 
+
+<br><br>
+
+{% endblock %}

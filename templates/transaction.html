@@ -1,0 +1,31 @@
+
+{% extends 'base.html' %}
+
+{% block head %}
+<title> transactions </title>
+
+{% endblock %}
+
+{% block body %}
+<h2>Add a transaction: </h2>
+
+<form action="/submit_trans" method="POST">
+    
+    <label for="emp_id">Employee ID:</label><br>
+    <input type="number" id="emp_id" name="emp_id" required><br><br>
+    <label for="trans_amt">Transaction amount:</label><br>
+    <input type="text" id="trans_amt" name="trans_amt" required><br><br>
+    <label for="pts_redeemed">Points redeemed:</label><br>
+    <input type="number" id="pts_redeemed" name="pts_redeemed" placeholder="0" step="100"><br><br>
+    <label for="pt_mult_bonus">Bonus point multiplier:</label><br>
+    <input type="number" id="pt_mult_bonus" name="pt_mult_bonus" placeholder="1.0" min = 1.0 step = "any"><br><br>
+    <br>
+        <button><a>Submit</a></button><br>
+</form>
+<br><br>
+<hr>
+
+<a href = '/'> 
+    <button> Home </button>
+</a> 
+{% endblock %}
