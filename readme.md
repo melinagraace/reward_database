@@ -34,6 +34,7 @@ To set up the database on your computer, first create a new database. In this ca
 
 ## File structure
 readme.md <br>
+app.py <br>
 <b>folder:</b> sql_code <br>
 &emsp;&emsp; create_tables.sql <br>
 &emsp;&emsp; functions.sql <br>
@@ -42,18 +43,16 @@ readme.md <br>
 &emsp;&emsp; triggers.sql <br>
 &emsp;&emsp; update_delete.sql <br>
 &emsp;&emsp; view.sql <br>
-<b>folder:</b> app <br>
-&emsp;&emsp; app.py <br>
 &emsp;&emsp; <b>folder:</b> static <br>
 &emsp;&emsp;&emsp;&emsp; <b>folder:</b> css <br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; main.css <br>
-&emsp;&emsp; <b>folder:</b> templates <br>
-&emsp;&emsp;&emsp;&emsp; base.html <br>
-&emsp;&emsp;&emsp;&emsp; error.html <br>
-&emsp;&emsp;&emsp;&emsp; first_page.html <br>
-&emsp;&emsp;&emsp;&emsp; new_cust.html <br>
-&emsp;&emsp;&emsp;&emsp; success.html <br>
-&emsp;&emsp;&emsp;&emsp; transaction.html <br>
+<b>folder:</b> templates <br>
+&emsp;&emsp; base.html <br>
+&emsp;&emsp; error.html <br>
+&emsp;&emsp; first_page.html <br>
+&emsp;&emsp; new_cust.html <br>
+&emsp;&emsp; success.html <br>
+&emsp;&emsp; transaction.html <br>
 
 ## Code references
 While the code written was all specific to this project, to initially learn flask, my code was started from a base of other people's code. Nothing in the code is entirely unedited, but I wanted to ensure proper credit for the beginning of the code. Specifically, the initial app.py file was started with code from Lumary on Youtube, as was the form in new_cust.html. The integration with an existing database in app.py was learned from Pretty Printed on Youtube. Finally, the html structure, specifically the code for base.html, was from FreeCodeCamp.org on Youtube. These are in the *References: For code* section of the final project submission document. 
