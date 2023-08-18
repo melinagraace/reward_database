@@ -43,9 +43,9 @@ app.py <br>
 &emsp;&emsp; triggers.sql <br>
 &emsp;&emsp; update_delete.sql <br>
 &emsp;&emsp; view.sql <br>
-&emsp;&emsp; <b>folder:</b> static <br>
-&emsp;&emsp;&emsp;&emsp; <b>folder:</b> css <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; main.css <br>
+ <b>folder:</b> static <br>
+&emsp;&emsp; <b>folder:</b> css <br>
+&emsp;&emsp;&emsp;&emsp; main.css <br>
 <b>folder:</b> templates <br>
 &emsp;&emsp; base.html <br>
 &emsp;&emsp; error.html <br>
